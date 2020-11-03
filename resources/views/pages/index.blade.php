@@ -102,30 +102,29 @@
                     </div>
                 </div>
             </div>
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">ABOUT ME</h2>
-                </div>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto">
-                        <p class="pre-wrap lead">I am a fresh graduate with strong problem-solving and debugging skills. Frameworks for building fast and responsive web applications is one of my strengths. I am a quick learner and also very keen on learning new things. I can quickly adapt to new environments. Understanding my responsibility as a worker and taking account of my actions are also my strong traits. I love working on machine learning projects.</p>
+            <section class="page-section portfolio" id="about">
+                <div class="container">
+                    <!-- Portfolio Section Heading-->
+                    <div class="text-center">
+                        <h2 class="page-section-heading text-secondary mb-0 d-inline-block">ABOUT</h2>
                     </div>
-                    <div class="col-lg-4 mr-auto">
-                        <p class="pre-wrap lead">                                  Skills
-PHP, Python, HTML, CSS, JavaScript, Django, Flask, Laravel, React Native, MySQL, PostgreSQL, Tensorflow, Keras, Jupyter Notebook.</p>
+                    <!-- Icon Divider-->
+                    <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        @if (count($abouts) > 0)
+                            @foreach ($abouts as $about)
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="timeline-body"><p class="text-muted">{{$about->description}}</p></div>
+                            </div>
+                            @endforeach
+                        @endif
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
@@ -166,7 +165,7 @@ PHP, Python, HTML, CSS, JavaScript, Django, Flask, Laravel, React Native, MySQL,
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/mushfiqur.rahman.3511/"><i class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/sbootstrap"><i class="fab fa-fw fa-twitter"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/startbootstrap"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/mushfiqur.rahman.3511/"><i class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/mushfiqrb"><i class="fab fa-fw fa-twitter"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
