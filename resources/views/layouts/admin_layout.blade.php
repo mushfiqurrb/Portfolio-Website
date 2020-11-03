@@ -85,9 +85,9 @@
                                     <a class="nav-link" href="{{route('admin.abouts.list')}}">List</a>
                                 </nav>
                             </div>
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
-                                Contact
+                            <a class="nav-link" href="{{route('home')}}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                                HOME
                             </a>
                         
                         </div>
